@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score keeper</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="score-card">
+        <h1 class="main-heading">Match Score</h1>
+        <div class="score">
+            <h2> <span id="p1Display"> 0 </span> - <span id="p2Display"> 0 </span> </h2>
+        </div>
+        <select id="play-to" class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+        </select>
+        <div class="add-score">
+            <button id="p1Button" type="button" class="btn btn-success">+1 Player One</button>
+            <button id="reset" type="button" class="btn btn-warning">Reset</button>
+            <button id="p2Button" type="button" class="btn btn-primary">+1 Player Two</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
